@@ -23,6 +23,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: remote
       run: git remote add codecommit "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/my-git"
+    
+    - name: remote2
+      run: git remote add master "https://github.com/mi-ki-ri/git-from-codecommit.git"
 
     # Runs a set of commands using the runners shell
     - name: pull
