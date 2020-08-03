@@ -19,6 +19,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    
+    - name: name
+      run: git config --global user.name 'gitcommit-at-506370942921'
+      
+    - name: pass
+      run: git config --global credential.helper "!aws codecommit --profile CODECOMMIT credential-helper $@"'
+    - name: http
+      run: git config --global credential.UseHttpPath true
+
 
     # Runs a single command using the runners shell
     - name: remote
