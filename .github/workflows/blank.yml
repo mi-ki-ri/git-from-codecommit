@@ -27,7 +27,7 @@ jobs:
       run: git config --global user.name 'gitcommit-at-506370942921'
       
     - name: pass
-      run: git config --global credential.helper "!aws codecommit --profile CODECOMMIT credential-helper $@"'
+      run: git config --global credential.helper "!aws codecommit --profile CODECOMMIT credential-helper $@"
     - name: http
       run: git config --global credential.UseHttpPath true
 
