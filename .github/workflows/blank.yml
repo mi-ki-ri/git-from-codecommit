@@ -20,6 +20,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
+    - name: config
+      run: git config pull.rebase true
+    
     - name: name
       run: git config --global user.name 'gitcommit-at-506370942921'
       
